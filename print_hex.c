@@ -69,11 +69,11 @@ int print_X(va_list X)
  * Return: base ^ exponent
  */
 static unsigned long _pow(unsigned int base, unsigned int exponent)
-OAOAOAOAOAOAOAOAOA{
-OAOAOA	unsigned int i;
+{
+	unsigned int i;
 	unsigned long ans = base;
 
-i	for (i = 1; i < exponent; i++)
+	for (i = 1; i < exponent; i++)
 	{
 		ans *= base;
 	}
@@ -82,7 +82,7 @@ i	for (i = 1; i < exponent; i++)
 
 /**
  * print_p - prints an address
-OAOAOAOAOAOAOAOAOAOAOAOAOAOAOAOAOAOA * @p: address to print
+ * @p: address to print
  *
  * Return: number of characters to print
  */
@@ -92,13 +92,13 @@ int print_p(va_list p)
 	unsigned int a[16];
 	unsigned int i, sum;
 	unsigned long n, m;
-OBOBOB	char *str = "(nil)";
+	char *str = "(nil)";
 
-OBOBOB	n = va_arg(p, unsigned long);
-OBOBOB	if (n == 0)
-OBOBOB	{
-OBOBOB		for (i = 0; str[i]; i++)
-OBOBOB		{
+	n = va_arg(p, unsigned long);
+	if (n == 0)
+	{
+		for (i = 0; str[i]; i++)
+		{
 			_putchar(str[i]);
 			count++;
 		}
