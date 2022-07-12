@@ -67,5 +67,6 @@ _printf("%s, %s %d, %d\\n", weekday, month, day, year);
 .SH BUGS
 
 
-.SH AUTHOR
-Rose Wachuka and Jefferson Kimani
+.SH AUTHORS
+Rose Wachuka
+Jefferson Kimani
